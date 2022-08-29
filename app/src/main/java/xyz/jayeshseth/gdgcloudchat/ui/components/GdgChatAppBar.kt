@@ -54,7 +54,7 @@ fun GdgChatAppBarPreview() {
 
 @Preview
 @Composable
-fun JetchatAppBarPreviewDark() {
+fun GdgChatAppBarPreviewDark() {
     GDGCloudChatTheme(darkTheme = true) {
         GdgChatAppBar(title = { Text("Preview!") })
     }

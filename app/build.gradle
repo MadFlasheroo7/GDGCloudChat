@@ -59,12 +59,13 @@ dependencies {
     // kotlin
     implementation Libs.Kotlin.stdlib
     implementation Libs.Kotlin.ktx
+    implementation Libs.Kotlin.extensions
 
-    //coroutine
+    // coroutine
     implementation Libs.Coroutines.core
     implementation Libs.Coroutines.kotlinx
 
-    //compose
+    // compose
     implementation Libs.AndroidX.Compose.ui
     implementation Libs.AndroidX.Compose.foundation
     implementation Libs.AndroidX.Compose.liveData
@@ -78,17 +79,22 @@ dependencies {
     implementation Libs.AndroidX.Compose.ui_util
     implementation Libs.AndroidX.Compose.viewBinding
 
-//    implementation 'androidx.core:core-ktx:1.8.0'
-//    implementation "androidx.compose.ui:ui:1.2.1"
-//    implementation 'androidx.compose.material3:material3:1.0.0-alpha16'
-//    implementation "androidx.compose.ui:ui-tooling-preview:1.2.1"
-//    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
-//    implementation 'androidx.activity:activity-compose:1.5.1'
+    // accompanist
+    implementation Libs.Accompanist.systemUIController
+
+    // navigation
+    implementation Libs.AndroidX.Navigation.navigation
+    implementation Libs.AndroidX.Navigation.navigationUiKtx
+
+    // others
+    implementation Libs.AndroidX.Others.appcompat
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.2.1"
 
+    // debug
     debugImplementation Libs.AndroidX.Compose.uiTooling
     debugImplementation Libs.AndroidX.Compose.composeManifest
 

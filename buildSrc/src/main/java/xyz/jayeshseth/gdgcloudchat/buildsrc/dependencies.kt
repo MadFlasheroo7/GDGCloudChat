@@ -6,41 +6,24 @@ object Versions {
     const val androidLibrary = "7.2.2"
     const val androidx_activity_compose = "1.5.1"
     const val androidx_appcompat = "1.5.0"
-    const val androidx_benchmark = "1.1.0"
-    const val androidx_benchmark_junit4 = "1.1.0-beta04"
     const val androidx_constraintlayout = "1.0.1"
     const val androidx_corektx = "1.8.0"
     const val androidx_lifecycle_compose = "2.5.1"
     const val androidx_navigation = "2.5.1"
-    const val androidx_palette = "1.0.0"
-    const val androidx_test = "1.4.0"
-    const val androidx_test_espresso = "3.4.0"
-    const val androidx_test_ext_junit = "1.1.3"
-    const val androidx_test_ext_truth = "1.4.0"
     const val androidx_window = "1.1.0-alpha03"
     const val androidxHiltNavigationCompose = "1.0.0"
     const val androidx_test_uiautomator = "2.2.0"
     const val coil = "2.2.0"
-    const val compileSdk = "33"
     const val compose = "1.2.1"
     const val compose_compiler = "1.3.0"
     const val compose_material3 = "1.0.0-alpha15"
     const val compose_materialWindow = "1.0.0-alpha15"
     const val compose_snapshot = "-"
     const val coroutines = "1.6.4"
-    const val hilt = "2.43.2"
-    const val hiltExt = "1.0.0"
     const val jdkDesugar = "1.1.5"
     const val junit = "4.13.2"
     const val kotlin = "1.7.10"
     const val material = "1.7.0-beta01"
-    const val minSdk = "21"
-    const val okhttp = "4.10.0"
-    const val roboelectric = "4.5.1"
-    const val rome = "1.18.0"
-    const val room = "2.5.0-alpha02"
-    const val secrets = "2.0.1"
-    const val spotless = "6.9.1"
 }
 
 object Libs {
@@ -49,7 +32,7 @@ object Libs {
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
         const val extensions = "org.jetbrains.kotlin:kotlin-android-extensions:${Versions.kotlin}"
-        const val ktx = "androidx.core:core-ktx:1.7.0"
+        const val ktx = "androidx.core:core-ktx:${Versions.androidx_corektx}"
     }
 
     object Coroutines {
@@ -57,35 +40,11 @@ object Libs {
         const val kotlinx = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     }
 
-//    object SquareUp {
-//        object Okhttp {
-//            const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
-//            const val okhttpUrlConnection = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
-//            const val okhttpLoggingInterceptor = "com.squareup.okhttp3:okhttp-urlconnection:${Versions.okhttp}"
-//        }
-//
-//        object Retrofit {
-//            const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-//            const val gsonConvertor = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
-//            const val moshiConvertor = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
-//            const val scalarsConvertor = "com.squareup.retrofit2:converter-scalars:${Versions.retrofit}"
-//        }
-//    }
-
     object Accompanist {
         const val systemUIController = "com.google.accompanist:accompanist-systemuicontroller:${Versions.accompanist}"
         const val insets = "com.google.accompanist:accompanist-insets:${Versions.accompanist}"
         const val swiperefresh = "com.google.accompanist:accompanist-swiperefresh:${Versions.accompanist}"
     }
-
-//    object Hilt {
-//        const val lifeCycleViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltViewModel}"
-//        const val googleHilt = "com.google.dagger:hilt-android:2.40.5"
-//        const val googleHiltCompiler = "com.google.dagger:hilt-android-compiler:2.37"
-//        const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
-//        const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hilt}"
-//        const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hilt}"
-//    }
 
     object GradlePlugin {
         const val android = "com.android.tools.build:gradle:${Versions.androidGradlePlugin}"
@@ -123,7 +82,7 @@ object Libs {
         object Navigation {
             const val navigation = "androidx.navigation:navigation-compose:${Versions.androidx_navigation}"
             const val hiltNavigation = "androidx.hilt:hilt-navigation-compose${Versions.androidxHiltNavigationCompose}"
-            const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx${Versions.androidx_navigation}"
+            const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.androidx_navigation}"
             const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.androidx_navigation}"
 //            const val composeDestinations = "io.github.raamcosta.compose-destinations:core:${Versions.raamcostaNavigation}"
 //            const val kspComposeDestinations = "io.github.raamcosta.compose-destinations:ksp:${Versions.raamcostaNavigation}"
@@ -143,9 +102,8 @@ object Libs {
         }
 
         object Others {
-            const val window = "androidx.window:window:1.0.0"
             const val coil = "io.coil-kt:coil-compose:${Versions.coil}"
-            const val appcompat = "androidx.appcompat:appcompat:1.4.1"
+            const val appcompat = "androidx.appcompat:appcompat:${Versions.androidx_appcompat}"
             const val splashScreen = "androidx.core:core-splashscreen:1.0.0-beta02"
         }
 

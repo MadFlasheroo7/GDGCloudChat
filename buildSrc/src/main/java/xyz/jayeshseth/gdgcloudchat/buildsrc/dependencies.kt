@@ -24,6 +24,8 @@ object Versions {
     const val junit = "4.13.2"
     const val kotlin = "1.7.10"
     const val material = "1.7.0-beta01"
+    const val firebaseBom = "30.3.2"
+    const val googleServices = "4.3.13"
 }
 
 object Libs {
@@ -49,7 +51,18 @@ object Libs {
     object GradlePlugin {
         const val android = "com.android.tools.build:gradle:${Versions.androidGradlePlugin}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+        const val googleServices = "com.google.gms:google-services:${Versions.googleServices}"
         const val androidLibrary = "com.android.library:${Versions.androidLibrary}"
+    }
+
+
+    /**
+     *  more libraries here -
+     *  https://firebase.google.com/docs/android/setup#available-libraries
+     */
+    object Firebase {
+        const val Bom = "com.google.firebase:firebase-bom:${Versions.firebaseBom}"
+        const val analytics = "com.google.firebase:firebase-analytics-ktx"
     }
 
     object AndroidX {

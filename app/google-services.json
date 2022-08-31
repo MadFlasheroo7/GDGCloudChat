@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935904173490",
+    "project_id": "gdg-cloud-chat",
+    "storage_bucket": "gdg-cloud-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935904173490:android:fa71cad6907ce11b1858ab",
+        "android_client_info": {
+          "package_name": "xyz.jayeshseth.gdgcloudchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935904173490-0lko9496c2htt52donqbult39ekrnvt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBenx0bKQIUqr76ogzOFd5UcZqm19MvJ_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935904173490-0lko9496c2htt52donqbult39ekrnvt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

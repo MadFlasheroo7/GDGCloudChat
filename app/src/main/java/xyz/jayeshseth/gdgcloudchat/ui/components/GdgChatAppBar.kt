@@ -1,4 +1,5 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
+
 package xyz.jayeshseth.gdgcloudchat.ui.components
 
 import androidx.compose.animation.core.FastOutLinearInEasing
@@ -17,7 +18,6 @@ import xyz.jayeshseth.gdgcloudchat.ui.theme.GDGCloudChatTheme
 fun GdgChatAppBar(
     modifier: Modifier = Modifier,
     scrollBehavior: TopAppBarScrollBehavior? = null,
-    onNavIconPressed: () -> Unit = { },
     title: @Composable () -> Unit,
     actions: @Composable RowScope.() -> Unit = {}
 ) {

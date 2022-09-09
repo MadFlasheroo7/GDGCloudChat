@@ -4,6 +4,7 @@
     package="xyz.jayeshseth.gdgcloudchat">
 
     <application
+        android:name=".GdgHiltApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -23,7 +24,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-    </application>
 
+
+        </activity>
+        g
+    </application>
 </manifest>
